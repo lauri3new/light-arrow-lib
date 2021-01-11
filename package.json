@@ -1,0 +1,33 @@
+{
+  "name": "@light-arrow/lib",
+  "version": "0.1.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "functional typescript",
+  "repository": "https://github.com/lauri3new/light-arrow-lib",
+  "main": "dist/index.js",
+  "files": [
+    "dist/**/*"
+  ],
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "jest --verbose --env=node",
+    "test:dev": "jest --verbose --env=node --watchAll",
+    "build": "tsc",
+    "lint": "npx eslint --fix './src/**/*'",
+    "prepublishOnly": "npm test && npm run build"
+  },
+  "author": "Laurence Newman",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.6.0",
+    "@typescript-eslint/parser": "^4.6.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "jest": "^26.6.0",
+    "ts-jest": "^26.4.1",
+    "typescript": "^4.0.3"
+  }
+}
